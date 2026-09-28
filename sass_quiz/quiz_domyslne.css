@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  margin: auto;
+  background-color: #efebe9;
+}
+
+#kontener {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+#naglowek {
+  font-size: 40px;
+  font-family: arial;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#wybor {
+  margin: 25px auto 25px auto;
+}
+
+#biologia, #geografia, #historia {
+  width: 68%;
+  padding: 25px 0px 25px 0px;
+  background-size: cover;
+  background-origin: border-box;
+  opacity: 92%;
+  border-radius: 14px;
+  line-height: 60px;
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+#biologia {
+  margin: auto auto 35px auto;
+  background-image: url(../obrazki_quiz/biologia.webp);
+  border: 10px double #0277bd;
+}
+
+#geografia {
+  margin: 35px auto 35px auto;
+  background-image: url(../obrazki_quiz/geografia.webp);
+  border: 10px double #e64a19;
+}
+
+#historia {
+  margin: 35px auto auto auto;
+  background-image: url(../obrazki_quiz/historia.webp);
+  border: 10px double #5d4037;
+}
+
+#biologia:hover, #geografia:hover, #historia:hover {
+  filter: brightness(95%);
+  border-radius: 14% 14% 14% 14%;
+}
+
+#biologia:hover {
+  border: 14px double #0277bd;
+}
+
+#geografia:hover {
+  border: 14px double #e64a19;
+}
+
+#historia:hover {
+  border: 14px double #5d4037;
+}
+
+.filtr {
+  width: 68%;
+  margin: 20px auto 20px auto;
+  backdrop-filter: blur(5px);
+}
+
+input[type=submit], button {
+  width: 360px;
+  height: 44px;
+  border: 3px solid black;
+  border-radius: 24% 24% 24% 24%;
+  font-size: 26px;
+  letter-spacing: 2px;
+  transition: all 0.1s ease-in-out;
+}
+
+#pierwszy:hover, #drugi:hover, #trzeci:hover, #next1:hover:enabled, #next2:hover:enabled, #next3:hover:enabled {
+  cursor: pointer;
+  filter: contrast(75%);
+}
+
+#pierwszy:hover, #next1:hover:enabled, #wynik1 {
+  color: #0277bd;
+}
+
+#drugi:hover, #next2:hover:enabled, #wynik2 {
+  color: #e64a19;
+}
+
+#trzeci:hover, #next3:hover:enabled, #wynik3 {
+  color: #5d4037;
+}
+
+#ktore, #pytanie, #odpowiedzi {
+  width: 68%;
+  text-align: left;
+}
+
+#ktore {
+  margin: 30px auto 15px auto;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#pytanie {
+  margin: auto auto 15px auto;
+  font-size: 26px;
+  letter-spacing: 0.6px;
+}
+
+#odpowiedzi {
+  font-size: 25px;
+}
+
+.klawisz {
+  margin: 30px auto 30px 24%;
+}
+
+input[type=radio] {
+  width: 20px;
+  height: 20px;
+}
+
+.quiz1 {
+  accent-color: #0277bd;
+}
+
+.quiz2 {
+  accent-color: #e64a19;
+}
+
+.quiz3 {
+  accent-color: #5d4037;
+}
+
+input[type=radio]:hover, .bio:hover, .geo:hover, .his:hover {
+  cursor: pointer;
+}
+
+.bio:hover {
+  -webkit-text-decoration: 2.5px #0277bd underline;
+          text-decoration: 2.5px #0277bd underline;
+}
+
+.geo:hover {
+  -webkit-text-decoration: 2.5px #e64a19 underline;
+          text-decoration: 2.5px #e64a19 underline;
+}
+
+.his:hover {
+  -webkit-text-decoration: 2.5px #5d4037 underline;
+          text-decoration: 2.5px #5d4037 underline;
+}
+
+#dalej {
+  margin: 40px auto 40px auto;
+}
+
+#next1, #next2, #next3, #dobre, #zle, button {
+  font-size: 28px;
+}
+
+#next1 {
+  background-color: #b2dfdb;
+}
+
+#next2 {
+  background-color: #ffcc80;
+}
+
+#next3 {
+  background-color: #bcaaa4;
+}
+
+#podsumowanie {
+  width: 68%;
+  margin: 25px auto 25px auto;
+}
+
+#wynik1, #wynik2, #wynik3 {
+  font-size: 34px;
+}
+
+#ilosc {
+  margin: 30px auto 25px auto;
+  font-size: 31px;
+}
+
+#dobre {
+  margin: 25px auto 25px auto;
+  color: green;
+}
+
+#zle {
+  margin: 25px auto 30px auto;
+  color: red;
+}
+
+#statystyka {
+  width: 68%;
+  height: 300px;
+  margin: 35px auto 35px auto;
+}
+
+#stopka {
+  margin: 35px auto 35px auto;
+  font-size: 19px;
+  font-style: italic;
+  text-shadow: 0.5px 0.5px 1px black;
+}/*# sourceMappingURL=quiz_domyslne.css.map */

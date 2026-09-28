@@ -1,0 +1,238 @@
+$pogrubienie: bold;
+$kolor1: #0277bd;
+$kolor2: #e64a19;
+$kolor3: #5d4037;
+
+*{
+      box-sizing: border-box;
+}
+
+body{
+      max-width: 1920px;
+      margin: auto;
+      background-color: #efebe9;
+}
+
+#kontener{
+      width: 80%;
+      margin: auto;
+      text-align: center;
+}
+
+#naglowek{
+      font: {
+            size: 40px;
+            family: arial;
+            weight: $pogrubienie;
+      }
+      letter-spacing: 1px;
+}
+
+#wybor{
+      margin: 25px auto 25px auto;
+}
+
+#biologia, #geografia, #historia{
+      width: 68%;
+      padding: 25px 0px 25px 0px;
+      background: {
+            size: cover;
+            origin: border-box;
+      }
+      opacity: 92%;
+      border-radius: 14px;
+      line-height: 60px;
+      color: white;
+      font: {
+            size: 34px;
+            weight: $pogrubienie;
+      }
+      transition: all .2s ease-in-out;
+}
+
+#biologia{
+      margin: auto auto 35px auto;
+      background-image: url(../obrazki_quiz/biologia.webp);
+      border: 10px double $kolor1;
+}
+
+#geografia{
+      margin: 35px auto 35px auto;
+      background-image: url(../obrazki_quiz/geografia.webp);
+      border: 10px double $kolor2;
+}
+
+#historia{
+      margin: 35px auto auto auto;
+      background-image: url(../obrazki_quiz/historia.webp);
+      border: 10px double $kolor3;
+}
+
+#biologia:hover, #geografia:hover, #historia:hover{
+      filter: brightness(95%);
+      border-radius: 14% 14% 14% 14%;
+}
+
+#biologia:hover{
+      border: 14px double $kolor1;
+}
+
+#geografia:hover{
+      border: 14px double $kolor2;
+}
+
+#historia:hover{
+      border: 14px double $kolor3;
+}
+
+.filtr{
+      width: 68%;
+      margin: 20px auto 20px auto;
+      backdrop-filter: blur(5px);
+}
+
+input[type="submit"], button{
+      width: 360px;
+      height: 44px;
+      border: 3px solid black;
+      border-radius: 24% 24% 24% 24%;
+      font-size: 26px;
+      letter-spacing: 2px;
+      transition: all .1s ease-in-out;
+}
+
+#pierwszy:hover, #drugi:hover, #trzeci:hover, #next1:hover:enabled, #next2:hover:enabled, #next3:hover:enabled{
+      cursor: pointer;
+      filter: contrast(75%);
+}
+
+#pierwszy:hover, #next1:hover:enabled, #wynik1{
+      color: $kolor1;
+}
+
+#drugi:hover, #next2:hover:enabled, #wynik2{
+      color: $kolor2;
+}
+
+#trzeci:hover, #next3:hover:enabled, #wynik3{
+      color: $kolor3;
+}
+
+#ktore, #pytanie, #odpowiedzi{
+      width: 68%;
+      text-align: left;
+}
+
+#ktore{
+      margin: 30px auto 15px auto;
+      font: {
+            size: 28px;
+            weight: $pogrubienie;
+      }
+}
+
+#pytanie{
+      margin: auto auto 15px auto;
+      font-size: 26px;
+      letter-spacing: 0.6px;
+}
+
+#odpowiedzi{
+      font-size: 25px;
+}
+
+.klawisz{
+      margin: 30px auto 30px 24%;
+}
+
+input[type="radio"]{
+      width: 20px;
+      height: 20px;
+}
+
+.quiz1{
+      accent-color: $kolor1;
+}
+
+.quiz2{
+      accent-color: $kolor2;
+}
+
+.quiz3{
+      accent-color: $kolor3;
+}
+
+input[type="radio"]:hover, .bio:hover, .geo:hover, .his:hover{
+      cursor: pointer;
+}
+
+.bio:hover{
+      text-decoration: 2.5px $kolor1 underline;
+}
+
+.geo:hover{
+      text-decoration: 2.5px $kolor2 underline;
+}
+
+.his:hover{
+      text-decoration: 2.5px $kolor3 underline;
+}
+
+#dalej{
+      margin: 40px auto 40px auto;
+}
+
+#next1, #next2, #next3, #dobre, #zle, button{
+      font-size: 28px;
+}
+
+#next1{
+      background-color: #b2dfdb;
+}
+
+#next2{
+      background-color: #ffcc80;
+}
+
+#next3{
+      background-color: #bcaaa4;
+}
+
+#podsumowanie{
+      width: 68%;
+      margin: 25px auto 25px auto;
+}
+
+#wynik1, #wynik2, #wynik3{
+      font-size: 34px;
+}
+
+#ilosc{
+      margin: 30px auto 25px auto;
+      font-size: 31px;
+}
+
+#dobre{
+      margin: 25px auto 25px auto;
+      color: green;
+}
+
+#zle{
+      margin: 25px auto 30px auto;
+      color: red;
+}
+
+#statystyka{
+      width: 68%;
+      height: 300px;
+      margin: 35px auto 35px auto;
+}
+
+#stopka{
+      margin: 35px auto 35px auto;
+      font: {
+            size: 19px;
+            style: italic;
+      }
+      text-shadow: 0.5px 0.5px 1px black;
+}
