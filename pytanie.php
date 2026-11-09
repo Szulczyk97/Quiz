@@ -1,4 +1,5 @@
 <?php
+      session_name("PROJEKT_QUIZ");
       session_start();
 
       if(!isset($_SESSION["jaki"], $_SESSION["numer"])){

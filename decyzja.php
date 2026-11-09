@@ -1,4 +1,5 @@
 <?php
+      session_name("PROJEKT_QUIZ");
       session_start();
 
       if($_SERVER["REQUEST_METHOD"] !== "POST"){

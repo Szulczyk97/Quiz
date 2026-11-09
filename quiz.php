@@ -1,4 +1,5 @@
 <?php
+      session_name("PROJEKT_QUIZ");
       session_start();
       unset($_SESSION["jaki"], $_SESSION["zapytanie"], $_SESSION["grupa"], $_SESSION["blokada"], $_SESSION["dobre"], $_SESSION["zle"]);
 ?>
